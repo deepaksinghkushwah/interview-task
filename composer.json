@@ -1,0 +1,13 @@
+{
+    "name": "asus/interview-task",
+    "type": "project",
+    "require": {
+        "php-curl-class/php-curl-class": "^9.18"
+    },
+    "authors": [
+        {
+            "name": "Deepak Singh Kushwah",
+            "email": "deepaksinghkushwah@gmail.com"
+        }
+    ]
+}
