@@ -1,13 +1,14 @@
 {
-    "name": "asus/interview-task",
-    "type": "project",
+    "name": "panique/mini3",
+    "minimum-stability": "dev",
     "require": {
-        "php-curl-class/php-curl-class": "^9.18"
+        "php-curl-class/php-curl-class": "dev-master"
     },
-    "authors": [
+    "autoload":
+    {
+        "psr-4":
         {
-            "name": "Deepak Singh Kushwah",
-            "email": "deepaksinghkushwah@gmail.com"
+            "Mini\\" : "application/"
         }
-    ]
+    }
 }

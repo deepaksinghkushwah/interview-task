@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.5.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="./js/main.js"></script>
-</head>
-
-<body>
-  <div class="max-w-2xl mx-auto flex justify-center mt-10 p-3">
+<div class="max-w-2xl mx-auto flex justify-center mt-10 p-3">
     <button class="btn" onclick="my_modal_1.showModal()">Open App</button>
     <dialog id="my_modal_1" class="modal">
       <div class="modal-box">
@@ -59,8 +43,3 @@
       </div>
     </dialog>
   </div>
-
-
-</body>
-
-</html>

@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "abff1908edde47581d9e0248aaedf23a",
+    "content-hash": "1a63b9b84a32643519a091c15370ac64",
     "packages": [
         {
             "name": "php-curl-class/php-curl-class",
-            "version": "9.18.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-curl-class/php-curl-class.git",
-                "reference": "2b8a93b37d0525b4585820397ab8af7f4c317bcb"
+                "reference": "76995e70eb1a10bd77a331ec49a6e5662c5c17ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-curl-class/php-curl-class/zipball/2b8a93b37d0525b4585820397ab8af7f4c317bcb",
-                "reference": "2b8a93b37d0525b4585820397ab8af7f4c317bcb",
+                "url": "https://api.github.com/repos/php-curl-class/php-curl-class/zipball/76995e70eb1a10bd77a331ec49a6e5662c5c17ca",
+                "reference": "76995e70eb1a10bd77a331ec49a6e5662c5c17ca",
                 "shasum": ""
             },
             "require": {
@@ -37,6 +37,7 @@
             "suggest": {
                 "ext-mbstring": "*"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -76,21 +77,22 @@
                 "requests",
                 "restful",
                 "web-scraper",
-                "web-scraping ",
                 "web-service",
                 "xml"
             ],
             "support": {
                 "issues": "https://github.com/php-curl-class/php-curl-class/issues",
-                "source": "https://github.com/php-curl-class/php-curl-class/tree/9.18.2"
+                "source": "https://github.com/php-curl-class/php-curl-class/tree/master"
             },
-            "time": "2023-09-11T18:08:28+00:00"
+            "time": "2024-01-02T16:53:18+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "php-curl-class/php-curl-class": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

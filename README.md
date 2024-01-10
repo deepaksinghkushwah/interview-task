@@ -1,1 +1,1 @@
-# This app is a example of calling WOOCommerce API's to create coupon, validate coupon, create customer, get customers etc.
+This app is a example of calling WOOCommerce API's to create coupon, validate coupon, create customer, get customers etc.
