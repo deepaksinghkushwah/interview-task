@@ -13,6 +13,7 @@ class CurlController
 
   public function createCoupon()
   {
+    header('Content-Type: application/json; charset=utf-8');
     $curl = new Curl();
     $curl->setBasicAuthentication($this->consumer_key, $this->consumer_secret);
     $curl->setOpt(CURLOPT_RETURNTRANSFER, true);
@@ -33,6 +34,7 @@ class CurlController
 
   public function validateCoupon()
   {
+    header('Content-Type: application/json; charset=utf-8');
     $curl = new Curl();
     $couponCode = $_REQUEST['couponCode'];
     $curl->setBasicAuthentication($this->consumer_key, $this->consumer_secret);
@@ -46,6 +48,7 @@ class CurlController
 
   public function createCustomer()
   {
+    header('Content-Type: application/json; charset=utf-8');
     $curl = new Curl();
     $curl->setBasicAuthentication($this->consumer_key, $this->consumer_secret);
     $curl->setOpt(CURLOPT_RETURNTRANSFER, true);
@@ -87,6 +90,7 @@ class CurlController
 
   public function getCustomer()
   {
+    header('Content-Type: application/json; charset=utf-8');
     $curl = new Curl();
 
 
@@ -94,6 +98,21 @@ class CurlController
     $curl->setOpt(CURLOPT_RETURNTRANSFER, true);
 
     $curl->get($this->endpoint . '/customers');
+
+    echo json_encode($curl->response);
+    $curl->close();
+  }
+
+  public function getOrders()
+  {
+    header('Content-Type: application/json; charset=utf-8');
+    $curl = new Curl();
+
+
+    $curl->setBasicAuthentication($this->consumer_key, $this->consumer_secret);
+    $curl->setOpt(CURLOPT_RETURNTRANSFER, true);
+
+    $curl->get($this->endpoint . '/orders');
 
     echo json_encode($curl->response);
     $curl->close();
